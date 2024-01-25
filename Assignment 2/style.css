@@ -1,0 +1,433 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #1a1a1a, #2c3e50);
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #4b6cb7, #182848, #4b6cb7);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+nav menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: dodgerblue;
+}
+
+section {
+    margin: 40px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin: 2%;
+    box-sizing: border-box;
+    height: 700px;
+    position: relative;
+    overflow: hidden; 
+    font-family: inherit; 
+    font-size: 16px; 
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    color: black;
+}
+
+img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+form input,
+form textarea {
+    width: calc(100% - 40px);
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 2px solid #fd1d1d;
+    border-radius: 12px;
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+a {
+    color: #27ae60;
+    text-decoration: underline;
+}
+
+section#projects table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+section#projects th,
+section#projects td {
+    padding: 15px;
+    border: 1px solid #fff;
+    text-align: left;
+}
+
+section#projects th {
+    background-color: #444;
+    color: #fff;
+}
+
+section#projects td {
+    background-color: #555;
+    color: #fff;
+}
+
+section#projects tr:nth-child(even) {
+    background-color: #666;
+}
+
+section#projects tr:hover {
+    background-color: #777;
+}
+/* Styles for the Video section */
+section#video details {
+    text-align: center;
+}
+
+section#video video {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    margin-top: 20px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+section#video video:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+section#video audio {
+    width: 100%;
+    max-width: 800px;
+    height: 50px;
+    margin-top: 20px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+section#video audio:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+#portfolio {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#portfolio h2 {
+  
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 200px; 
+    height: auto;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+}
+
+figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+figure:hover img {
+    transform: scale(1.5);
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+#contactub {
+    
+    width: 90%;
+    text-align: center;
+    margin: 4%;
+    
+}
+
+#contactub p {
+    margin-top: 20px;
+}
+
+#contactub a.social-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contactub a.social-icon:hover {
+    color: #2980b9;
+}
+footer {
+    clear: both;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+}
+
+
+
+/* Media query for iPad */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 1em; 
+    }
+
+    header {
+        padding: 0.5em; 
+    }
+
+    h1 {
+        font-size: 2em; 
+    }
+
+    nav menu {
+        text-align: center;
+        
+    }
+
+    nav li {
+        display: block;
+        margin: 2em;
+    }
+
+    section {
+        width: 100%; 
+        margin: 1.25em 0;
+        float: none;
+        padding: 1.25em; 
+        height: 800px; 
+        overflow: scroll hidden;
+    }
+
+    form label {
+        margin-bottom: 0.625em; 
+    }
+
+    form input,
+    form textarea {
+        width: calc(100% - 1.25em); 
+        margin-bottom: 0.9375em; 
+    }
+
+    form button {
+        padding: 0.75em 1.5625em; 
+    }
+
+    img {
+        max-width: 100%; 
+    }
+
+    #portfolio h2 {
+        font-size: 1.8em;
+    }
+
+    .gallery {
+        justify-content: center; 
+    }
+
+    figcaption {
+        font-size: 0.9em;
+    }
+
+    #contactub {
+        width: 100%; 
+        margin: 1.25em 0; 
+    }
+
+    #contactub a.social-icon {
+        margin-right: 0.3125em; 
+    }
+
+  section#projects table {
+        width: 100%;
+        max-height: 300px; 
+        overflow: scroll auto;
+        margin-top: 10px;
+    }
+
+    section#projects th,
+    section#projects td {
+        padding: 0.625em; 
+    }
+}
+
+/* Media query for Smartphones */
+@media only screen and (max-width: 365px) {
+    body {
+        font-size: 0.875em; 
+    }
+
+    header {
+        padding: 0.3em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    nav menu {
+        text-align: center; 
+    }
+
+    nav li {
+        display: block;
+        margin: 0.625em 0; 
+    }
+
+    section {
+        width: 100%; 
+        margin: 1.25em 0;
+        float: none;
+        padding: 1.25em; 
+        height: 1700px; 
+    }
+
+    form label {
+        margin-bottom: 0.3125em; 
+    }
+
+    form input,
+    form textarea {
+        width: calc(100% - 0.625em);
+        margin-bottom: 0.625em; 
+    }
+
+    form button {
+        padding: 0.625em 1.25em; 
+    }
+
+    img {
+        max-width: 100%; 
+    }
+
+    #portfolio h2 {
+        font-size: 1.5em; 
+    }
+
+    .gallery {
+        justify-content: center; 
+    }
+
+    figcaption {
+        font-size: 0.8em; 
+    }
+
+    #contactub {
+        width: 100%; 
+        margin: 1.25em 0; 
+    }
+
+    #contactub a.social-icon {
+        margin-right: 0.1875em; 
+    }
+
+      section#projects table {
+        width: 100%;
+        max-height: 1000px; 
+        overflow-y: scroll auto;
+        margin-top: 10px;
+          padding: 2%;
+    }
+
+    section#projects th,
+    section#projects td {
+        padding: 0.625em; 
+    }
+}
